@@ -82,6 +82,19 @@ client.on("message", async message => {
   );
 });
 
+client.on('guildMemberAdd', (member) => {
+  //Lorsqu'un Utilisateur Rejoint.
+  let welcomeChannel = client.channels.cache.get('825362499934617620');
+  welcomeChannel.send('**Bienvenue** <@' + member.user.id + '> ! 👋');
+  member.send('**Bienvenue** sur le serveur **__Eight Gang__** ! Lis attentivement les règles dans le salon <#825343340663930883> et clique sur la réaction en dessous pour pouvoir jouer avec les autres joueurs. Bon amusement !');
+});
+
+client.on('guildMemberRemove', (member) => {
+  //Lorsqu'un utilisateur Quitte.
+  let leaveChannel = client.channels.cache.get('825362499934617620');
+  leaveChannel.send('**Au revoir** <@' + member.user.id + '> ! 🙂');
+});
+
 client.login(process.env.TOKEN);
 
 //Bot Coded by 365 ɢᴀᴍɪɴɢ ɴ ᴍᴏʀᴇ_2.0#6766 DONOT share WITHOUT credits!!
