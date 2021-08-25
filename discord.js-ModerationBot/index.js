@@ -82,6 +82,6 @@ client.on("message", async message => {
   );
 });
 
-client.login(ODc5Nzg0MjI2NDcwMzk1OTA1.YSUw6Q.uqCl-kyaIkIYe3KpuJDAyscvKQI);
+client.login();
 
 //Bot Coded by 365 ɢᴀᴍɪɴɢ ɴ ᴍᴏʀᴇ_2.0#6766 DONOT share WITHOUT credits!!
