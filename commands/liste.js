@@ -6,7 +6,7 @@ module.exports = {
   name: "liste",
   aliases: [],
   description: "liste des commandes",
-  usage: "Ping",
+  usage: "liste",
   run: async (client, message, args) => {
     //Start
     message.delete();
