@@ -84,15 +84,15 @@ client.on("message", async message => {
 
 client.on('guildMemberAdd', (member) => {
   //Lorsqu'un Utilisateur Rejoint.
-  let welcomeChannel = client.channels.cache.get('825362499934617620');
-  welcomeChannel.send('**Bienvenue** <@' + member.user.id + '> ! 👋');
-  member.send('**Bienvenue** sur le serveur **__NFT By Misery__** ! Lis attentivement les règles dans le salon <#825343340663930883> et clique sur la réaction en dessous pour pouvoir avoir accès au serveur. Bon amusement !');
+  let welcomeChannel = client.channels.cache.get('929698265971183637');
+  welcomeChannel.send('**Bienvenue/Welcome** <@' + member.user.id + '> ! 👋');
+  member.send('🇫🇷 : Bienvenue sur le serveur **__NFT By Misery__** 🇬🇧 : Welcome to th server **__NFT By Misery__** ');
 });
 
 client.on('guildMemberRemove', (member) => {
   //Lorsqu'un utilisateur Quitte.
-  let leaveChannel = client.channels.cache.get('825362499934617620');
-  leaveChannel.send('**Au revoir** <@' + member.user.id + '> ! 🙂');
+  let leaveChannel = client.channels.cache.get('929698265971183637');
+  leaveChannel.send('**Au revoir/Good Bye** <@' + member.user.id + '> ! 🙂');
 });
 
 client.login(process.env.TOKEN);
