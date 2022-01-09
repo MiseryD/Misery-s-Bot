@@ -87,10 +87,12 @@ client.on('guildMemberAdd', (member) => {
   let welcomeChanneFr = client.channels.cache.get('929698265971183637');
   welcomeChannel.send('**Bienvenue** <@' + member.user.id + '> ! 👋');
   member.send('🇫🇷 : Bienvenue sur le serveur **__NFT By Misery__**  🇬🇧 : Welcome to the server **__NFT By Misery__**');
-  let welcomeChanneAg = client.channels.cache.get('929704666424565790');
-  welcomeChannel.send('**Welcome** <@' + member.user.id + '> ! 👋');
 });
-
+client.on('guildMemberAdd', (member) => {
+  //Lorsqu'un Utilisateur Rejoint.
+  let welcomeChanneFr = client.channels.cache.get('929704666424565790');
+  welcomeChannel.send('**Welcome** <@' + member.user.id + '> ! 👋');
+  });
 client.on('guildMemberRemove', (member) => {
   //Lorsqu'un utilisateur Quitte.
   let leaveChannel = client.channels.cache.get('929698265971183637');
