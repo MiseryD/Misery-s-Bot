@@ -96,12 +96,12 @@ client.on('guildMemberAdd', (member) => {
 client.on('guildMemberRemove', (member) => {
   //Lorsqu'un utilisateur Quitte.
   let leaveChannelFr = client.channels.cache.get('929698265971183637');
-  leaveChannelFr.send('**Au revoir/Good Bye** <@' + member.user.id + '> ! 🙂');
+  leaveChannelFr.send('**Au revoir** <@' + member.user.id + '> ! 🙂');
 });
 client.on('guildMemberRemove', (member) => {
   //Lorsqu'un utilisateur Quitte.
   let leaveChannelAg = client.channels.cache.get('929704666424565790');
-  leaveChannelAg.send('**Au revoir/Good Bye** <@' + member.user.id + '> ! 🙂');
+  leaveChannelAg.send('**Good Bye** <@' + member.user.id + '> ! 🙂');
 });
 
 
