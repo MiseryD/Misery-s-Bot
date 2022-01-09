@@ -9,7 +9,7 @@ client.db = require("quick.db");
 client.on("ready", async () => {
   console.log(`✔ BOT PRÊT ✔`);
   client.user
-    .setActivity(`Eight Gang`, { type: "WATCHING" })
+    .setActivity(`NFT By Misery`, { type: "WATCHING" })
     .catch(error => console.log(error));
 });
 
