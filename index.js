@@ -84,14 +84,14 @@ client.on("message", async message => {
 
 client.on('guildMemberAdd', (member) => {
   //Lorsqu'un Utilisateur Rejoint.
-  let welcomeChanneFr = client.channels.cache.get('929698265971183637');
-  welcomeChannel.send('**Bienvenue** <@' + member.user.id + '> ! 👋');
+  let welcomeChannelFr = client.channels.cache.get('929698265971183637');
+  welcomeChannelFr.send('**Bienvenue** <@' + member.user.id + '> ! 👋');
   member.send('🇫🇷 : Bienvenue sur le serveur **__NFT By Misery__**  🇬🇧 : Welcome to the server **__NFT By Misery__**');
 });
 client.on('guildMemberAdd', (member) => {
   //Lorsqu'un Utilisateur Rejoint.
-  let welcomeChanneFr = client.channels.cache.get('929704666424565790');
-  welcomeChannel.send('**Welcome** <@' + member.user.id + '> ! 👋');
+  let welcomeChannelAg = client.channels.cache.get('929704666424565790');
+  welcomeChannelAg.send('**Welcome** <@' + member.user.id + '> ! 👋');
   });
 client.on('guildMemberRemove', (member) => {
   //Lorsqu'un utilisateur Quitte.
