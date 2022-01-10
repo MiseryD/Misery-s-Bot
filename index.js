@@ -111,9 +111,9 @@ client.on('message',(msg)=>{ // Evenement message
                 var time = msg.createdAt - old_msg[old_msg.length-1].createdAt // DURÉE ENTRE LES DEUX DERNIERS MESSAGES
 
                 if (time < 5000) {//SPAM 5 sec
-                    msg.member.roles.add('ID ROLE SPAM') //AJOUTE LE ROLE SPAM
+                    msg.member.roles.add('930147793283215440') //AJOUTE LE ROLE SPAM
                     
-                    client.channels.cache.get('ID DE VOTRE CHANNEL DEBUG/ADMIN').send(`${msg.member} a été mute`) // MSG ADMINISTRATIOn
+                    client.channels.cache.get('930147651574444052').send(`${msg.member} a été mute`) // MSG ADMINISTRATIOn
                     msg.channel.send(`Calme toi ${msg.member} !! `) // MSG DE PREVENTION
                     timer(msg,client)//DESACTIVÉ AU BOUT D'UN X LE SPAM
                     msg.delete() // SUPPRIME LE MESSAGE
