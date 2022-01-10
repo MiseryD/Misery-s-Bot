@@ -104,7 +104,11 @@ client.on('guildMemberRemove', (member) => {
   leaveChannelAg.send('**Good Bye** <@' + member.user.id + '> ! 🙂');
 });
 
-var time = msg.createdAt - old_msg[old_msg.length-1].createdAt // DURÉE ENTRE LES DEUX DERNIERS MESSAGES
+client.on('message',(msg)=>{ // Evenement message 
+        try{ // ESSAYER
+            if (msg.author.id != client.user.id && old_msg[old_msg.length-1].author.id == msg.author.id && old_msg[old_msg.length-2].author.id == msg.author.id) { // SI LES TROIS DERNIERS MESSAGES SONT ENVOYÉS PAR LE MEME UTILISATEUR
+                
+                var time = msg.createdAt - old_msg[old_msg.length-1].createdAt // DURÉE ENTRE LES DEUX DERNIERS MESSAGES
 
                 if (time < 5000) {//SPAM 5 sec
                     msg.member.roles.add('ID ROLE SPAM') //AJOUTE LE ROLE SPAM
